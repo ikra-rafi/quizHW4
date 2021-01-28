@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 4 Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons-->
+    <script src="https://kit.fontawesome.com/71dcd7ccb8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- This is for the start of the quiz, select Ready? to begin -->
+    <div class="start_button"><button>Ready?</button></div>
+
+    <!-- Brief information on what the quiz is about and how to restart, and how to proceed to the next question.  -->
+    <div class="information_container">
+        <div class="information_items">
+            <div class="info">This quiz will test your knowledge on the U.S. capitals</div>
+            <div class="info">Five states have been randomly selected.</div>
+            <div class="info">Select answer before timer ends and click next.</div>
+            <div class="info">Refresh the browser to start again.</div>
+            <div class="info">Score is determined by your answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="withdraw">I change my mind.</button>
+            <button class="reset">Let's Go!</button>
+        </div>
+    </div>
+
+    <!-- Question Container -->
+    <div class="question_container">
+        <header>
+            <div class="title">Geography & Travel: State Capitals</div>
+            <div class="countdown">
+                <div class="countdown_text"></div>
+                <div class="countdown_seconds">15</div>
+            </div>
+        </header>
+        
+        <!-- Questions and choices for the user are available in JS -->
+        <section>
+            <div class="question_text"></div>
+            <div class="choice_select"></div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="correct_total">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="onward_button">Onwards!</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="score_container">
+        <div class="icon">
+            <i class="fas fa-cat"></i>
+        </div>
+        <div class="complete_text">Finished!</div>
+        <div class="grade">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="reset">Try Again?</button>
+            <button class="withdraw">Have a Nice Day!</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

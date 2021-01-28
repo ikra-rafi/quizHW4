@@ -1,0 +1,358 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Odibee Sans', cursive;
+}
+
+/* Background */
+body{
+    background: #f8b195;
+}
+
+::selection{
+    color: #fff;
+    background: #f67280;
+}
+
+/* positioning of containers/div */
+.start_button,
+.information_container,
+.question_container,
+.score_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.information_container.initiateInformation,
+.question_container.initiateExam,
+.score_container.activeResult{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+}
+
+.start_button button{
+    font-size: 25px;
+    color: #f67280;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.information_container{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.information_container .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+}
+
+.information_container .information_items{
+    padding: 15px 30px;
+}
+
+.information_container .information_items .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.information_container .information_items .info span{
+    color: #f67280;
+}
+.information_container .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+.information_container .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #f67280;
+    transition: all 0.3s ease;
+}
+
+.question_container{
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.question_container header{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.question_container header .title{
+    font-size: 20px;
+}
+
+.question_container header .countdown{
+    color: #355c7d;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+}
+
+.question_container header .countdown .countdown_text{
+    font-size: 17px;
+    user-select: none;
+}
+
+.question_container header .countdown .countdown_seconds{
+    font-size: 18px;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #6c5b7b;
+    border: 1px solid #6c5b7b;
+    user-select: none;
+}
+
+section{
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+
+section .question_text{
+    font-size: 25px;
+}
+
+/* .choice_select element for the listed choices and .option element for the designed appearance */
+section .choice_select{
+    padding: 20px 0px;
+    display: block;   
+}
+
+section .choice_select .option{
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .choice_select .choice:last-child{
+    margin-bottom: 0px;
+}
+
+section .choice_select .option:hover{
+    color: #355c7d;
+    background: #f8b195;
+    border: 1px solid #f8b195;
+}
+
+section .choice_select .option.correct{
+    color: #635b7b;
+    background: #f8b195;
+    border: 1px solid #f8b195;
+}
+
+section .choice_select .option.incorrect{
+    color: #635b7b;
+    background: #c06c84;
+    border: 1px solid #f5c6cb;
+}
+
+section .choice_select .option.disabled{
+    pointer-events: none;
+}
+
+section .choice_select .option .icon{
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    line-height: 24px;
+}
+.choice_select .option .icon.tick{
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+
+.choice_select .option .icon.cross{
+    color: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
+}
+
+footer{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+footer .correct_total span{
+    display: flex;
+    user-select: none;
+}
+
+footer .correct_total span p{
+    padding: 0 5px;
+}
+
+footer .correct_total span p:first-child{
+    padding-left: 0px;
+}
+
+footer button{
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background: #f8b195;
+    border: 1px solid #f8b195;
+    line-height: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+footer button:hover{
+    background: #c06c84;
+}
+
+footer button.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.score_container{
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.score_container .icon{
+    font-size: 100px;
+    color: #f8b195;
+    margin-bottom: 10px;
+}
+
+.score_container .complete_text{
+    font-size: 20px;
+}
+
+.score_container .grade span{
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.score_container .grade span p{
+    padding: 0 4px;
+}
+
+.score_container .buttons{
+    display: flex;
+    margin: 20px 0;
+}
+
+.score_container .buttons button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #f8b195;
+    transition: all 0.3s ease;
+}
+
+.buttons button.reset{
+    color: #fff;
+    background: #f8b195;
+}
+
+.buttons button.reset:hover{
+    background: #c06c84;
+}
+
+.buttons button.withdraw{
+    color: #f8b195;
+    background: #fff;
+}
+
+.buttons button.withdraw:hover{
+    color: #fff;
+    background: #c06c84;
+}
