@@ -15,7 +15,7 @@ This app is a timed quiz that will test your knowledge on U.S. state capitals. T
 ![screenshot](Assets/questionquiz.png)
 
 
-Repo: https://github.com/ikra-rafi/quizHW4
+Repo: https://github.com/ikra-rafi/quizHW4 
 Published site: https://ikra-rafi.github.io/quizHW4/
 
 Creating a multiple choice test on code acronyms.
