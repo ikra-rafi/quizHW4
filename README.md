@@ -1,3 +1,20 @@
+# State Capital Quiz
+## Description
+This app is a timed quiz that will test your knowledge on U.S. state capitals. The timer countsdown and resets with each question. You better answer the question within the time alloted or else you will loose points! Your score will show at the end of the quiz.
+
+## Screenshots
+### Correct Answer
+![screenshot](Assets/correctquiz.png) 
+### Wrong Answer
+![screenshot](Assets/wrongquiz.png)
+### Score
+![screenshot](Assets/scorequiz.png)
+### Start
+![screenshot](Assets/readyquiz.png)
+### Question
+![screenshot](Assets/questionquiz.png)
+
+
 Repo: https://github.com/ikra-rafi/quizHW4
 Published site: https://ikra-rafi.github.io/quizHW4/
 
