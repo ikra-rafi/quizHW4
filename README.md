@@ -12,7 +12,7 @@ This app is a timed quiz that will test your knowledge on U.S. state capitals. T
 ### Start  
 ![screenshot](Assets/readyquiz.png)
 ### Question 
-![screenshot](Assets/questionquiz.png) 
+![screenshot](Assets/questionquiz.png)  
 
 
 Repo: https://github.com/ikra-rafi/quizHW4 
