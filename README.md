@@ -27,7 +27,7 @@ Challenge: The timer is set for each question. I didn't subtract time bc I could
 so instead there is 15 seconds allowed for each question but you must select an answer to 
 get to the next question. 
 
-Resources used:
+Resources used: 
 Also got help from this YouTube Channel:
 How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial
 https://www.youtube.com/watch?v=f4fB9Xg2JEY&ab_channel=BrianDesign
