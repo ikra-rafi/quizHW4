@@ -10,7 +10,7 @@ This app is a timed quiz that will test your knowledge on U.S. state capitals. T
 ### Score 
 ![screenshot](Assets/scorequiz.png)
 ### Start  
-![screenshot](Assets/readyquiz.png)
+![screenshot](Assets/readyquiz.png) 
 ### Question  
 ![screenshot](Assets/questionquiz.png)  
 
