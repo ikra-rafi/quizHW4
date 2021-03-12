@@ -75,7 +75,7 @@ THEN I can save my initials and score
 ```
 
 
-## Mock-Up
+## Mock-Up 
 
 The following animation demonstrates the application functionality:
 
